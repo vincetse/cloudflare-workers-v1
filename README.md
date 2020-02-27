@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vincetse/cloudflare-workers-v1.svg?branch=master)](https://travis-ci.org/vincetse/cloudflare-workers-v1)
+
 # 👷 `worker-template` Hello World
 
 A template for kick starting a Cloudflare worker project.

@@ -8,10 +8,12 @@ env:
   - secure: vk6oXDg7cw3O8Ffudo7Nz/6KK5oOBHtllvAqgjVXl7qGX1r2f18GWGkNOhyCHUjsO4jwBlWcmFMlOBegSi668/7J1yMrqm+1iSia86IyHPI2G3KF4kRbMQDyFNjgEI/KCHwKeHw1mpmg74Tyk5Q4B+M/ZbC7FVO5hpDiTLvbSAhhnq0YSi09fyHYV57PlXm70aIfXu6Wcoxv92PofRbBl406HrpyOREbywa1I+p7kur9HQtgleu9j2aW0xR1409ZQxp8qPUlDCeO6X/wo6deVYkMolSWBh9rVf56vBcOb5rqI/RFKvVIo3c2g61b1vpt2NhQuoYX+whRW+xw+XKUwileclBU86rYkBUn2FLr8NiBn1CfYyYONuEYP+ig2bySzbmbRewsPecxGFnxXuy5YXH9tHFBDr5f3/TXJ6qvaspxZxZ/JY6Z5V+fTeY/krKfPnKl/A7nJFpx8rvWMkiGWVXobQ9dxICQJW6ny+NATWSu+KVH5x3IbtksQiJbPvcnIgET+4o7MqDNsL4l0j/hLNtA+AtIWxzYdhcmrN1YXXR5BxirOrOlWQepxIbrx8Zw7yzPnrChd/3nvfdO2k0v+9iqqJXaZXG2grqJDe0dJRvrNNFHponjXMccaShwnw7xYQV/2mQtdC55IBGIKriI15sxZ8x5ikNNFJK4Z1WG/Wc=
 
 install:
-- npm i @cloudflare/wrangler -g
+- npm install --global
+    @cloudflare/wrangler
+    prettier
 
 script:
-- true
+- prettier --check "*.js" "*.json" "*.md"
 
 deploy:
 - provider: script
