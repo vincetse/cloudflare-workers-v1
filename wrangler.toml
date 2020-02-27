@@ -1,0 +1,15 @@
+name = "v1"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[env.ci]
+name = "v1-ci"
+
+[env.staging]
+name = "v1-staging"
+
+[env.production]
+name = "v1-production"
